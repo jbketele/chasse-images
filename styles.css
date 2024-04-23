@@ -542,3 +542,7 @@ h1 {
 .pagination button.active {
     color: blue;
 }
+
+#pageButtons {
+    display: flex;
+}
