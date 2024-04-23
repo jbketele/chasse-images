@@ -15,7 +15,9 @@ h1 {
     text-shadow: black 1px 1px 2px;
 }
 
-
+.nav-link {
+    color: white;
+}
 
 .logo {
     width: 7vw;
@@ -515,4 +517,28 @@ h1 {
         -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, -225, 0, 1);
         transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, -225, 0, 1);
     }
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.pagination button:hover {
+    background-color: aliceblue;
+}
+
+.pagination button.active {
+    color: blue;
 }
