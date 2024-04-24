@@ -29,17 +29,51 @@ h1 {
     box-sizing: border-box;
 }
 
+@media (max-width:767px) {
+    .gallery {
+        display: block;
+        margin-left: 1rem;
+    }
+
+    .popup figure {
+        position: relative;
+        left: 80%;
+    }
+
+    .popup.pop figure {
+        width: 80%;
+    }
+
+    .popup figure figcaption {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:767px) {
+    .gallery {
+        display: flex;
+    }
+
+    .popup figure {
+        position: absolute;
+        left: 50%;
+    }
+
+    .popup.pop figure {
+        width: -webkit-fill-available;
+    }
+
+    .popup figure figcaption {
+        font-size: 32px;
+    }
+}
+
 .gallery {
     position: relative;
     z-index: 2;
     padding: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -92,14 +126,10 @@ h1 {
 .popup.pop figure {
     margin-top: 0;
     opacity: 1;
-    width: -webkit-fill-available;
-    right: 15rem;
 }
 
 .popup figure {
-    position: absolute;
     top: 50%;
-    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-transform-origin: 0 0;
@@ -129,7 +159,6 @@ h1 {
     padding: 100px 20px 20px 20px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
 }
 
 .popup figure figcaption small {
